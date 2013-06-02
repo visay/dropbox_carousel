@@ -1,0 +1,18 @@
+plugin.tx_dropboxcarousel {
+	view {
+		# cat=plugin.tx_dropboxcarousel/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:dropbox_carousel/Resources/Private/Templates/
+		# cat=plugin.tx_dropboxcarousel/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:dropbox_carousel/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_dropboxcarousel//a; type=string; label=Default storage PID
+		storagePid =
+	}
+	settings {
+		# cat=plugin.tx_dropboxcarousel//b; type=string; label=Default file storage uid
+		fileStorage =
+		# cat=plugin.tx_dropboxcarousel//b; type=string; label=Dropbox folder name that stores the images for the carousel
+		folderName =
+	}
+}

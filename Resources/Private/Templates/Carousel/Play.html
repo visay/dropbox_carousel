@@ -1,0 +1,19 @@
+{namespace v=Tx_DropboxCarousel_ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="main">
+	<div class="carousel-inner">
+		<f:for each="{files}" as="file" iteration="iterator">
+			<div class="item{f:if(condition: iterator.isFirst, then: ' active')}">
+				<img alt="" src="{file.publicUrl}" />
+				<div class="carousel-caption">
+					<h4>{file.nameWithoutExtension}</h4>
+					<p>{folderName}</p>
+				</div>
+			</div>
+		</f:for>
+	</div>
+	<a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a>
+	<a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>
+</f:section>

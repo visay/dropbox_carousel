@@ -1,0 +1,42 @@
+plugin.tx_dropboxcarousel {
+	view {
+		templateRootPath = {$plugin.tx_dropboxcarousel.view.templateRootPath}
+		layoutRootPath = {$plugin.tx_dropboxcarousel.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_dropboxcarousel.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	settings {
+		fileStorage = {$plugin.tx_dropboxcarousel.settings.fileStorage}
+		folderName = {$plugin.tx_dropboxcarousel.settings.folderName}
+	}
+}
+
+plugin.tx_dropboxcarousel._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-dropbox-carousel table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-dropbox-carousel table th {
+		font-weight:bold;
+	}
+
+	.tx-dropbox-carousel table td {
+		vertical-align:top;
+	}
+)

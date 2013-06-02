@@ -1,0 +1,38 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.fileStorage>
+						<TCEforms>
+							<label>File Storage Uid</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<eval>num,required</eval>
+							</config>
+						</TCEforms>
+					</settings.fileStorage>
+					<settings.folderName>
+						<TCEforms>
+							<label>Dropbox Folder Name</label>
+							<config>
+								<type>input</type>
+								<size>25</size>
+								<eval>required</eval>
+							</config>
+						</TCEforms>
+					</settings.folderName>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>
